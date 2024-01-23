@@ -43,3 +43,8 @@ def car_rental_days():
     rental_days = input(
         "\nPlease input the number of days that you would like to hire a car for: \n"
     )
+    try:
+        rental_days = int(rental_days)
+        if rental_days <= 0:
+            rental_days = 0
+            print("You have chosen not to rent a car")
