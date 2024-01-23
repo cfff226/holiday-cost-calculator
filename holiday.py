@@ -12,7 +12,7 @@ daily_car_rental = [39, 45, 86, 98, 72]
 while True:
     print("\n\t\t\tWelcome to Yourtrip!")
     city_flight = input(
-        "\nPlease type either 'Berlin', 'Amsterdam', 'Zurich', 'Paris' or 'Budapest "
+        "\nPlease type either 'Berlin', 'Amsterdam', 'Zurich', 'Paris' or 'Budapest": 
     )
     if city_flight.lower() not in list_of_cities:
         print("You have entered incorrectly")
@@ -37,3 +37,9 @@ def number_of_nights():
     return num_nights
 
 number_of_nights()
+
+# Function which requests the number of says that the user would like to rent a car for
+def car_rental_days():
+    rental_days = input(
+        "\nPlease input the number of days that you would like to hire a car for: \n"
+    )
