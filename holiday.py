@@ -30,4 +30,10 @@ def number_of_nights():
         if num_nights <= 0:
             num_nights = 0
             print("You have chosen not to book a hotel")
-            return num_nights
+    except ValueError:
+        print("You have entered incorrectly")
+        number_of_nights()
+    
+    return num_nights
+
+number_of_nights()
