@@ -92,9 +92,9 @@ def car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight):
 car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight)
 
 # Function which calculates the cost of the flight and outputs to the user
-def plane_cost(list_of_cities, city_flight, plane_cost):
+def total_plane_cost(list_of_cities, city_flight, plane_cost):
     index = list_of_cities.index(city_flight)
-    plane_cost = plane_cost[index]
+    plane_total = plane_cost[index]
     print(
-        f"\nThe total cost of your flight to {list_of_cities[index].capitalize()} would be £{plane_cost}"
+        f"\nThe total cost of your flight to {list_of_cities[index].capitalize()} would be £{plane_total}"
     )
