@@ -77,3 +77,8 @@ def hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight):
 
 
 hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight)
+
+
+# Function which calculates the cost of car rental and outputs to the user
+def car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight):
+    
