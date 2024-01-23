@@ -48,3 +48,8 @@ def car_rental_days():
         if rental_days <= 0:
             rental_days = 0
             print("You have chosen not to rent a car")
+    except ValueError:
+        print("You have entered incorrectly")
+        car_rental_days()
+
+    return rental_days
