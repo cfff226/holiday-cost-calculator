@@ -33,10 +33,12 @@ def number_of_nights():
         if num_nights <= 0:
             num_nights = 0
             print("You have chosen not to book a hotel")
+            return num_nights
+        else:
+            return num_nights
     except ValueError:
         print("You have entered incorrectly")
         number_of_nights()
-
 
 num_nights = number_of_nights()
 
@@ -65,7 +67,7 @@ def hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight):
     daily_hotel_cost = daily_hotel_cost[index]
     hotel_total = daily_hotel_cost * num_nights
     print(
-        f"\n- The total cost of the hotel in {list_of_cities[index]} would be £{hotel_total}"
+        f"\nThe total cost of the hotel in {list_of_cities[index].capitalize()} would be £{hotel_total}"
     )
 
 
