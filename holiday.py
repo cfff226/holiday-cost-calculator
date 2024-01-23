@@ -2,6 +2,10 @@
 
 list_of_cities = ["berlin", "amsterdam", "zurich", "paris", "budapest"]
 
+plane_cost = ["89", "65", "110", "95", "87"]
+
+daily_car_rental = ["39", "45", "86", "98", "72"]
+
 # Request the city choice from the user
 while True:
     print("\nWelcome to Yourtrip!")
