@@ -72,7 +72,7 @@ def hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight):
     print(
         f"\nThe total cost of the hotel in {list_of_cities[index].capitalize()} would be £{hotel_total}"
     )
-
+    return hotel_total
 
 hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight)
 
@@ -85,7 +85,7 @@ def car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight):
     print(
         f"\nThe total cost of the car rental in {list_of_cities[index].capitalize()} would be £{car_total}"
     )
-
+    return car_total
 
 car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight)
 
@@ -96,10 +96,18 @@ def total_plane_cost(list_of_cities, city_flight, plane_cost):
     print(
         f"\nThe total cost of your flight to {list_of_cities[index].capitalize()} would be £{plane_total}"
     )
+    return plane_total
 
 total_plane_cost(list_of_cities, city_flight, plane_cost)
 
 
 # Function which calculates the total cost of a holiday
-def holiday_cost(hotel_total, car_total, plane_total):
+def holiday_cost():
+    total = hotel_total + car_total + plane_total
     print("\n------------------------ Your price breakdown: ------------------------\n")
+    print(f"The total cost of your holiday is £{total}")
+    return total
+
+holiday_cost()
+
+
