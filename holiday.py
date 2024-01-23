@@ -66,7 +66,6 @@ rental_days = car_rental_days
 
 # Function which calculates the cost of the hotel per night and outputs to the user
 def hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight):
-    city_flight = city_flight.lower()
     index = list_of_cities.index(city_flight)
     daily_hotel_cost = daily_hotel_cost[index]
     hotel_total = daily_hotel_cost * num_nights
@@ -80,6 +79,5 @@ hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight)
 
 # Function which calculates the cost of car rental and outputs to the user
 def car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight):
-    city_flight = city_flight.lower()
     index = list_of_cities.index(city_flight)
     daily_car_rental = daily_car_rental[index]
