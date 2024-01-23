@@ -81,9 +81,10 @@ hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight)
 def car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight):
     index = list_of_cities.index(city_flight)
     daily_car_rental = daily_car_rental[index]
-    car_rental_cost = daily_car_rental * rental_days
+    car_total = daily_car_rental * rental_days
     print(
-        f"\nThe total cost of the car rental in {list_of_cities[index].capitalize()} would be £{car_rental_cost}"
+        f"\nThe total cost of the car rental in {list_of_cities[index].capitalize()} would be £{car_total}"
     )
+
 
 car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight)
