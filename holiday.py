@@ -27,3 +27,7 @@ def number_of_nights():
     num_nights = input("\nPlease input the number of nights that you wish to stay: \n")
     try:
         num_nights = int(num_nights)
+        if num_nights <= 0:
+            num_nights = 0
+            print("You have chosen not to book a hotel")
+            return num_nights
