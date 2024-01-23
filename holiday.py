@@ -20,8 +20,7 @@ while True:
         print("You have entered incorrectly")
         continue
     else:
-        city_flight = city_flight.capitalize()
-        print(f"\nGreat, you have chosen to fly to {city_flight}")
+        print(f"\nGreat, you have chosen to fly to {city_flight.capitalize}")
         break
 
 
