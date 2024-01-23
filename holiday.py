@@ -2,7 +2,7 @@ import math
 
 # Program which calculates the total cost of a holiday for a user
 
-list_of_cities = ["berlin", "amsterdam", "zurich", "paris", "budapest: "]
+list_of_cities = ["berlin", "amsterdam", "zurich", "paris", "budapest"]
 
 plane_cost = [89, 65, 110, 95, 87]
 
@@ -14,7 +14,7 @@ daily_hotel_cost = [78, 82, 125, 110, 90]
 while True:
     print("\n\t\t\tWelcome to Yourtrip!")
     city_flight = input(
-        "\nPlease type either 'Berlin', 'Amsterdam', 'Zurich', 'Paris' or 'Budapest: "
+        "\nPlease type either 'Berlin', 'Amsterdam', 'Zurich', 'Paris' or 'Budapest': "
     )
     if city_flight.lower() not in list_of_cities:
         print("You have entered incorrectly")
@@ -81,8 +81,6 @@ hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight)
 def car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight):
     index = list_of_cities.index(city_flight)
     daily_car_rental = daily_car_rental[index]
-    print(rental_days)
-    print(daily_car_rental)
     car_total = daily_car_rental * rental_days
     print(
         f"\nThe total cost of the car rental in {list_of_cities[index].capitalize()} would be £{car_total}"
@@ -98,3 +96,10 @@ def total_plane_cost(list_of_cities, city_flight, plane_cost):
     print(
         f"\nThe total cost of your flight to {list_of_cities[index].capitalize()} would be £{plane_total}"
     )
+
+total_plane_cost(list_of_cities, city_flight, plane_cost)
+
+
+# Function which calculates the total cost of a holiday
+def holiday_cost(hotel_total, car_total, plane_total):
+    print("\n------------------------ Your price breakdown: ------------------------\n")
