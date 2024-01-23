@@ -40,6 +40,7 @@ def number_of_nights():
         print("You have entered incorrectly")
         number_of_nights()
 
+
 num_nights = number_of_nights()
 
 
@@ -53,11 +54,15 @@ def car_rental_days():
         if rental_days <= 0:
             rental_days = 0
             print("You have chosen not to rent a car")
+            return rental_days
+        else:
+            return rental_days
     except ValueError:
         print("You have entered incorrectly")
         car_rental_days()
 
-    return rental_days
+
+rental_days = car_rental_days
 
 
 # Function which calculates the cost of the hotel per night and outputs to the user
