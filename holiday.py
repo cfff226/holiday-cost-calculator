@@ -74,8 +74,6 @@ def hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight):
     )
     return hotel_total
 
-hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight)
-
 
 # Function which calculates the cost of car rental and outputs to the user
 def car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight):
@@ -87,7 +85,6 @@ def car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight):
     )
     return car_total
 
-car_rental_cost(rental_days, list_of_cities, daily_car_rental, city_flight)
 
 # Function which calculates the cost of the flight and outputs to the user
 def total_plane_cost(list_of_cities, city_flight, plane_cost):
@@ -98,16 +95,21 @@ def total_plane_cost(list_of_cities, city_flight, plane_cost):
     )
     return plane_total
 
-total_plane_cost(list_of_cities, city_flight, plane_cost)
-
 
 # Function which calculates the total cost of a holiday
-def holiday_cost():
-    total = hotel_total + car_total + plane_total
-    print("\n------------------------ Your price breakdown: ------------------------\n")
-    print(f"The total cost of your holiday is £{total}")
-    return total
+def holiday_cost(city_flight):
+    while city_flight in list_of_cities:
+        total_plane = total_plane_cost(list_of_cities, city_flight, plane_cost)
+        total_car = car_rental_cost(
+            rental_days, list_of_cities, daily_car_rental, city_flight
+        )
+        total_hotel = hotel_cost(
+            num_nights, daily_hotel_cost, list_of_cities, city_flight
+        )
+        total = total_plane + total_car + total_hotel
+        print("\n------------------------ Your price total: ------------------------\n")
+        print(f"Your total holiday cost: £{total}\n")
+        break
 
-holiday_cost()
 
-
+holiday_cost(city_flight)
