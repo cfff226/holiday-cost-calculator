@@ -10,14 +10,15 @@ daily_car_rental = [39, 45, 86, 98, 72]
 
 daily_hotel_cost = [78, 82, 125, 110, 90]
 
+print("\n\t\t\tWelcome to Yourtrip!")
+
 # Request the city choice from the user
 while True:
-    print("\n\t\t\tWelcome to Yourtrip!")
     city_flight = input(
         "\nPlease type either 'Berlin', 'Amsterdam', 'Zurich', 'Paris' or 'Budapest': "
     )
     if city_flight.lower() not in list_of_cities:
-        print("You have entered incorrectly")
+        print("\n\t\t\tYou have entered incorrectly")
         continue
     else:
         print(f"\nGreat, you have chosen to fly to {city_flight.capitalize()}")
@@ -27,6 +28,7 @@ while True:
 # Function which requests the number of nights that the user would like to book a hotel for
 def number_of_nights():
     num_nights = input("\nPlease input the number of nights that you wish to stay: ")
+
     try:
         num_nights = int(num_nights)
         if num_nights <= 0:
@@ -36,8 +38,8 @@ def number_of_nights():
         else:
             return num_nights
     except ValueError:
-        print("You have entered incorrectly")
-        number_of_nights()
+        print("\n\n\t\t\tYou have entered incorrectly\n")
+        return number_of_nights()
 
 
 num_nights = number_of_nights()
@@ -57,8 +59,8 @@ def car_rental_days():
         else:
             return rental_days
     except ValueError:
-        print("You have entered incorrectly")
-        car_rental_days()
+        print("\n\n\t\t\tYou have entered incorrectly\n")
+        return car_rental_days()
 
 
 rental_days = car_rental_days()
