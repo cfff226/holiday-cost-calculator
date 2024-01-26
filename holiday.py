@@ -10,7 +10,7 @@ daily_car_rental = [39, 45, 86, 98, 72]
 
 daily_hotel_cost = [78, 82, 125, 110, 90]
 
-print("\n\t\t\tWelcome to Yourtrip!")
+print("\n\n\t\t\tWelcome to Yourtrip!")
 
 # Request the city choice from the user
 while True:
@@ -18,10 +18,10 @@ while True:
         "\nPlease type either 'Berlin', 'Amsterdam', 'Zurich', 'Paris' or 'Budapest': "
     )
     if city_flight.lower() not in list_of_cities:
-        print("\n\t\t\tYou have entered incorrectly")
+        print("\n------------------------ You've entered incorrectly ------------------------\n")
         continue
     else:
-        print(f"\nGreat, you have chosen to fly to {city_flight.capitalize()}")
+        print(f"\n\n------------------- Great, you have chosen to fly to {city_flight.capitalize()} -------------------")
         break
 
 
@@ -33,12 +33,12 @@ def number_of_nights():
         num_nights = int(num_nights)
         if num_nights <= 0:
             num_nights = 0
-            print("You have chosen not to book a hotel")
+            print("\n--------------------- You've chosen not to book a hotel ---------------------\n")
             return num_nights
         else:
             return num_nights
     except ValueError:
-        print("\n\n\t\t\tYou have entered incorrectly\n")
+        print("\n------------------------ You've entered incorrectly ------------------------")
         return number_of_nights()
 
 
@@ -54,12 +54,12 @@ def car_rental_days():
         rental_days = int(rental_days)
         if rental_days <= 0:
             rental_days = 0
-            print("You have chosen not to rent a car")
+            print("\n--------------------- You've chosen not to rent a car ---------------------\n")
             return rental_days
         else:
             return rental_days
     except ValueError:
-        print("\n\n\t\t\tYou have entered incorrectly\n")
+        print("\n------------------------ You've entered incorrectly ------------------------")
         return car_rental_days()
 
 
@@ -72,7 +72,7 @@ def hotel_cost(num_nights, daily_hotel_cost, list_of_cities, city_flight):
     daily_hotel_cost = daily_hotel_cost[index]
     hotel_total = daily_hotel_cost * num_nights
     print(
-        f"\nThe total cost of the hotel in {list_of_cities[index].capitalize()} would be £{hotel_total}"
+        f"\nThe total cost of the hotel in {list_of_cities[index].capitalize()} would be £{hotel_total}\n"
     )
     return hotel_total
 
@@ -109,7 +109,7 @@ def holiday_cost(city_flight):
             num_nights, daily_hotel_cost, list_of_cities, city_flight
         )
         total = total_plane + total_car + total_hotel
-        print("\n------------------------ Your price total: ------------------------\n")
+        print("\n---------------------------- Your price total: ----------------------------\n")
         print(f"Your total holiday cost: £{total}\n")
         break
 
