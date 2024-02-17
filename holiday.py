@@ -18,10 +18,14 @@ while True:
         "\nPlease type either 'Berlin', 'Amsterdam', 'Zurich', 'Paris' or 'Budapest': "
     )
     if city_flight.lower() not in list_of_cities:
-        print("\n------------------------ You've entered incorrectly ------------------------\n")
+        print(
+            "\n------------------------ You've entered incorrectly ------------------------\n"
+        )
         continue
     else:
-        print(f"\n\n------------------- Great, you have chosen to fly to {city_flight.capitalize()} -------------------")
+        print(
+            f"\n\n------------------- Great, you have chosen to fly to {city_flight.capitalize()} -------------------"
+        )
         break
 
 
@@ -33,12 +37,16 @@ def number_of_nights():
         num_nights = int(num_nights)
         if num_nights <= 0:
             num_nights = 0
-            print("\n--------------------- You've chosen not to book a hotel ---------------------\n")
+            print(
+                "\n--------------------- You've chosen not to book a hotel ---------------------\n"
+            )
             return num_nights
         else:
             return num_nights
     except ValueError:
-        print("\n------------------------ You've entered incorrectly ------------------------")
+        print(
+            "\n------------------------ You've entered incorrectly ------------------------"
+        )
         return number_of_nights()
 
 
@@ -54,12 +62,16 @@ def car_rental_days():
         rental_days = int(rental_days)
         if rental_days <= 0:
             rental_days = 0
-            print("\n--------------------- You've chosen not to rent a car ---------------------\n")
+            print(
+                "\n--------------------- You've chosen not to rent a car ---------------------\n"
+            )
             return rental_days
         else:
             return rental_days
     except ValueError:
-        print("\n------------------------ You've entered incorrectly ------------------------")
+        print(
+            "\n------------------------ You've entered incorrectly ------------------------"
+        )
         return car_rental_days()
 
 
@@ -109,7 +121,9 @@ def holiday_cost(city_flight):
             num_nights, daily_hotel_cost, list_of_cities, city_flight
         )
         total = total_plane + total_car + total_hotel
-        print("\n---------------------------- Your price total: ----------------------------\n")
+        print(
+            "\n---------------------------- Your price total: ----------------------------\n"
+        )
         print(f"Your total holiday cost: £{total}\n")
         break
 
