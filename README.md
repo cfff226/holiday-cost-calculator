@@ -30,7 +30,7 @@ A program which offers a quote for various holiday destinations, factoring in th
 
 ### It is recommended to download a code editor such as VScode if you don't have one, although you can view this project in a browser.
 
-- Go to https://github.com/cfff226.
+- Go to https://github.com/cfff226/holiday-cost-calculator
 - Select the repository.
 - Navigate to the green button labeled 'Code'.
 - Select 'Download ZIP'.
