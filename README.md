@@ -3,7 +3,6 @@
 A holiday cost calculator program which is to be run in a code editor terminal, developed on VScode using Python.
 
 ## Description
-
 A program which offers a quote for various holiday destinations, factoring in the cost of flight, hotel and car rental.
 
 ## Languages used
@@ -13,7 +12,6 @@ A program which offers a quote for various holiday destinations, factoring in th
 # Goals
 
 ## My Goals as a developer
-
 * To provide a simple to navigate program, ensuring that information is clear and consise.
 * To provide an accurate quote to the user based on their requirements.
 * To provide a seemless process, handling any possible errors that may occur.
@@ -21,7 +19,6 @@ A program which offers a quote for various holiday destinations, factoring in th
 * To use best coding practices, intending to use simple and easy to read code with minimal repetition.
 
 ## User Goal
-
 * To be presented with clear, accurate and concise information.
 * To have any possible errors handled without the program breaking.
 * To receive an accurate and easy to read quote at the end of the program.
@@ -30,7 +27,7 @@ A program which offers a quote for various holiday destinations, factoring in th
 
 ### It is recommended to download a code editor such as VScode if you don't have one, although you can view this project in a browser.
 
-Go to https://github.com/cfff226/holiday-cost-calculator
+* Go to https://github.com/cfff226/holiday-cost-calculator
 * Select the repository.
 * Navigate to the green button labeled 'Code'.
 * Select 'Download ZIP'.
@@ -40,7 +37,6 @@ Go to https://github.com/cfff226/holiday-cost-calculator
 * Open the downloaded folder, this will open all files from the zip folder in the code editor.
 
 # Usage
-
 * Select the triangular play button in the top right corner of the code editor to start the program
 
 * Enter the holiday destination of your choice
@@ -56,5 +52,4 @@ Go to https://github.com/cfff226/holiday-cost-calculator
 ![CAR RENTAL DAYS!](holiday.png/car-rental.png)
 
 # Credits
-
 This project is based on Task 16 of the Software Engineering course at Hyperiondev.
