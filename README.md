@@ -56,4 +56,4 @@ Go to https://github.com/cfff226/holiday-cost-calculator
 ![CAR RENTAL DAYS!](holiday.png/car-rental.png)
 
 # Credits
-This project idea intiailly came from the portfolio sessions from the Hyperiondev Software Engineering course.
+This project is based on Task 16 of the Software Engineering course at Hyperiondev.
